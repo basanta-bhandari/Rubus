@@ -1,0 +1,2 @@
+let num: int = "not a number"
+print(num)

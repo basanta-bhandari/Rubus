@@ -1,0 +1,64 @@
+print("=== STRING METHODS ===")
+let s: str = "hello world"
+print(s.upper())
+print(s.lower())
+print(s.replace("world", "Rubus"))
+print(s.split(" "))
+print(s.count("l"))
+print(s.startswith("hello"))
+print(s.endswith("world"))
+print(s.find("wor"))
+print(s.strip())
+
+print("\n=== LIST METHODS ===")
+let lst: list = [1, 2, 3, 4, 5]
+lst.append(6)
+print(lst)
+lst.extend([7, 8])
+print(lst)
+print(lst.index(3))
+print(lst.count(3))
+lst.reverse()
+print(lst)
+
+print("\n=== DICT METHODS ===")
+let d: dict = {"a": 1, "b": 2, "c": 3}
+print(d.keys())
+print(d.values())
+print(d.get("a"))
+print(d.get("z", "not found"))
+
+print("\n=== SLICING ===")
+let arr: list = [10, 20, 30, 40, 50]
+print(arr[1:4])
+print(arr[::2])
+print(arr[:3])
+print(arr[2:])
+
+let text: str = "Rubus"
+print(text[1:4])
+print(text[::2])
+
+print("\n=== LIST COMPREHENSIONS ===")
+let squares: list = [x * x for x in range(5)]
+print(squares)
+
+let evens: list = [x for x in range(10) if x % 2 == 0]
+print(evens)
+
+print("\n=== DICT COMPREHENSIONS ===")
+let pairs: dict = {x: x * 2 for x in range(5)}
+print(pairs)
+
+print("\n=== TYPE CHECKING ===")
+let num: int = 42
+print(num)
+let name: str = "Alice"
+print(name)
+
+def greet(name: str) -> none:
+    print(f"Hello, {name}!")
+
+greet("Bob")
+
+print("\n=== ALL TESTS PASSED ===")

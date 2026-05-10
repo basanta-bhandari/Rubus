@@ -1,0 +1,51 @@
+print("=== EDGE CASE TESTS ===")
+
+# Test empty collections
+let empty_list: list = []
+print(empty_list)
+let empty_dict: dict = {}
+print(empty_dict)
+
+# Test comprehension with empty result
+let no_evens: list = [x for x in [1, 3, 5] if x % 2 == 0]
+print(no_evens)
+
+# Test string with special characters
+let special: str = "hello, world!"
+print(special.split(","))
+print(special.replace("!", "?"))
+
+# Test nested slicing/methods
+let nums: list = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+let half: list = nums[len(nums)//2:]
+print(half)
+
+# Test method chaining simulation
+let s: str = "  hello  "
+let trimmed: str = s.strip()
+print(trimmed.upper())
+
+# Test comprehension with expressions
+let expanded: list = [x * 2 - 1 for x in range(1, 6)]
+print(expanded)
+
+# Test dict with various key types
+let mixed_dict: dict = {"a": 1, "b": 2}
+print(mixed_dict.get("a"))
+mixed_dict.pop("a")
+print(mixed_dict)
+
+# Test list pop variations
+let test_list: list = [1, 2, 3]
+let last: int = test_list.pop()
+print(last)
+print(test_list)
+
+# Test type annotation with complex types
+def process(nums: list) -> list:
+    return [x * 2 for x in nums]
+
+let result: list = process([1, 2, 3])
+print(result)
+
+print("\n=== ALL EDGE CASES PASSED ===")
