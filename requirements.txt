@@ -1,0 +1,3 @@
+windows-curses; sys_platform == "win32"
+#python3 / python 3.10 or higher
+#standard libs(curses, dataclasses, enum, pathlib, subprocess, re, tempfile)(curses, dataclasses, enum, pathlib, subprocess, re, tempfile)
