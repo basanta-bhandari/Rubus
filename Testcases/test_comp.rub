@@ -1,2 +1,0 @@
-let squares: list = [x * x for x in range(5)]
-print(squares)

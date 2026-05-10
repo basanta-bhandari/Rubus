@@ -1,2 +1,0 @@
-let s: str = "hello"
-print(s.upper())

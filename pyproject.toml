@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rubus-b1"  
+version = "0.1.0"
+description = "A tree-walking interpreter and terminal-based editor for the Rubus language."
+readme = "README.md"
+requires-python = ">=3.10"  
+dependencies = [
+    "windows-curses; sys_platform == 'win32'"
+]
+keywords = ["interpreter", "compiler", "editor", "language", "rubus"]
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Operating System :: OS Independent",
+]
+
+[project.scripts]
+rubed = "rubus.rubed:main"
+
+[project.urls]
+Homepage = "https://github.com/basanta-bhandari/rubus"
