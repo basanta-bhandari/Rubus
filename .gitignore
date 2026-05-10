@@ -4,4 +4,4 @@
 *.jpeg
 *.json
 /dist
-/myenvv
+/myenv
