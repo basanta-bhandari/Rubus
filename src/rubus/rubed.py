@@ -475,13 +475,10 @@ def _patch_interpreter_argv():
         os.execv(sys.executable, [sys.executable, str(interp), filepath])
 
 
-def main():
-    # Handle the --run flag or file opening logic
+def _rubed_entry():
     _patch_interpreter_argv()
-    
-    # Standard terminal editor launch
     filename = sys.argv[1] if len(sys.argv) > 1 else None
-    curses.wrapper(lambda stdscr: editor_main(stdscr, filename))
+    curses.wrapper(lambda stdscr: main(stdscr, filename))
 
 if __name__ == "__main__":
-    main()
+    _rubed_entry()

@@ -1,2 +1,0 @@
-[console_scripts]
-rubed = rubus.rubed:main
